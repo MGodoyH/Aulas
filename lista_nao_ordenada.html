@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!--Metadados-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aulas HTML-5 e CSS-3">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Matheus Godoy & Matheus Almeida">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="imagem/favicon.ico" type="imagem/x-icon">
+    <title>AULAS HTML</title>
+</head>
+<body>
+    <header id="topo"><!--Topo-->
+        <div id="atalhos">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Ir para o conteúdo [1]</a></li>
+                <li><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Ir para o menu[2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir para o rodapé">Ir para o rodapé [3]</a></li>
+                <li id="pgacess"><a href="acessibilidade.html" title="Ir para a página de acessibilidade">ACESSIBILIDADE</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste">CONTRASTE</a></li>
+                <li class="semcontraste"><a href="javascript:void(0);" id="semcontraste">SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="javascript:void(0); " id="aumenta">A +</a></li>
+                <li class="fonte"><a href="javascript:void(0); " id="diminui">A -</a></li>
+            </ul>
+        </div>
+            <img class="imagem" src="imagem/logo.png" alt="Logo Da Obra Social Dom Bosco em horizontal">
+            <img id="assistencia" src="imagem/assistencia-e-desenvolvimento-social_centralizado.png" alt="Logo da Assistencia Social da Prefeitura">
+            <nav><!--Navegaçao-->
+                <!--Menu Responsivo-->
+                <label for="bt_menu"><img src="imagem/menu.png" alt="menu"></label>
+                <input type="checkbox" id="bt_menu"> <!--Menu Responsivo-->
+                <ul id="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="comentarios.html">Comentários</a></li>
+                    <li><a href="metadados.html">Metadados</a></li>
+                    <li><a href="#">Listas</a>
+                        <ul>
+                            <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+                            <li><a href="lista_nao_ordenada.html">Lista Nao Ordenada</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="layout.html">Layout</a></li>
+                    <li><a href="contato.html">Fale Conosco</a></li>
+                </ul>
+            </nav>
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                  <div class="vw-plugin-top-wrapper"></div>
+                </div>
+              </div>
+              <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+              <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+              </script>
+    </header>
+    <main id="conteudo">
+        <ul id="breadcrumb">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="javascript:void(0);">Listas</a></li>
+            <li>Lista não ordenada</li>
+        </ul>
+    <h1 id="titulo">LISTA NÃO ORDENADA</h1>
+        <p class="paragrafo">Uma lista não ordenada começa com a tag &lt;ul&gt;. Cada item da lista começa com a tag <li>.
+        </p>
+        <p class="paragrafo">Os itens da lista serão marcados com marcadores (pequenos círculos pretos) por padrão:</p>
+        <img class="imagem" src="imagem/ul.png" alt="Imagem Com Conteúdo explicativo sobre o uso de listas não ordenadas em HTML.">
+        
+    </main>
+
+    <footer id="rodape">
+        <p>Desenvolvido por Matheus Godoy & Matheus Almeida<br>
+        Todos Os Direitos Reservados &copy; 2022</p>
+        <h4>Mapa Do Site</h4>
+        <ul id="mapa">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="comentarios.html">Comentarios</a></li>
+            <li><a href="metadados.html">Metadados</a></li>
+            <li><a href="#">Listas</a>
+                <ul>
+                    <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+                    <li><a href="lista_nao_ordenada.html">Lista Nao Ordenada</a></li>
+                </ul>
+            </li>
+            <li><a href="layout.html">Layout</a></li>
+            <li><a href="contato.html">Fale Conosco</a></li>
+        </ul>
+    </footer>
+    
+</body>

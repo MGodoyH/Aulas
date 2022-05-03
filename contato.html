@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!--Metadados-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aulas HTML-5 e CSS-3">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Matheus Godoy & Matheus Almeida">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="imagem/favicon.ico" type="imagem/x-icon">
+    <title>AULAS HTML</title>
+</head>
+<body>
+    <header id="topo"><!--Topo-->
+        <div id="atalhos">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Ir para o conteúdo [1]</a></li>
+                <li><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Ir para o menu[2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir para o rodapé">Ir para o rodapé [3]</a></li>
+                <li id="pgacess"><a href="acessibilidade.html" title="Ir para a página de acessibilidade">ACESSIBILIDADE</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste">CONTRASTE</a></li>
+                <li class="semcontraste"><a href="javascript:void(0);" id="semcontraste">SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="javascript:void(0); " id="aumenta">A +</a></li>
+                <li class="fonte"><a href="javascript:void(0); " id="diminui">A -</a></li>
+            </ul>
+        </div>
+            <img class="imagem" src="imagem/logo.png" alt="Logo Da Obra Social Dom Bosco em horizontal">
+            <img id="assistencia" src="imagem/assistencia-e-desenvolvimento-social_centralizado.png" alt="Logo da Assistencia Social da Prefeitura">
+            <nav><!--Navegaçao-->
+                <!--Menu Responsivo-->
+                <label for="bt_menu"><img src="imagem/menu.png" alt="menu"></label>
+                <input type="checkbox" id="bt_menu"> <!--Menu Responsivo-->
+                <ul id="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="comentarios.html">Comentarios</a></li>
+                    <li><a href="metadados.html">Metadados</a></li>
+                    <li><a href="#">Listas</a>
+                        <ul>
+                            <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+                            <li><a href="lista_nao_ordenada.html">Lista Nao Ordenada</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="layout.html">Layout</a></li>
+                </ul>
+            </nav>
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                  <div class="vw-plugin-top-wrapper"></div>
+                </div>
+              </div>
+              <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+              <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+              </script>
+    </header>
+    <main id="conteudo">
+        <ul id="breadcrumb">
+            <li><a href="index.html">Início</a></li>
+            <li>Contato</li>
+        </ul>
+        <h1 id="titulo">Fale Conosco</h1>
+        <form name="contato" id="contato" method="POST">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label class="required" for="nome">Nome</label><br>
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required><br>
+                <label class="required" for="data">Data de Nascimento</label><br>
+                <input type="date" name="data" id="data" required><br>
+                <label class="required" for="cpf">CPF</label><br>
+                <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99" required><br>
+                <label for="telefone">Telefone</label><br>
+                <input type="tel" name="telefone" id="telefone" placeholder="(99)99999-9999"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Dados de endereço</legend>
+                <label class="required" for="cep">CEP</label><br>
+                <input type="text" name="cep" id="cep" placeholder="99999.999" required><br>
+                <label for="rua">Rua/Av</label><br>
+                <input type="text" name="rua" id="rua"><br>
+                <label class="required" for="numero">Numero</label><br>
+                <input type="number" name="numero" id="numero" required><br>
+                <label for="complemento">Complemento</label><br>
+                <input type="text" name="complemento" id="complemento" placeholder="Apto/Bloco..."><br>
+                <label for="Bairro">Bairro</label><br>
+                <input type="text" name="bairro" id="bairro"><br>
+                <label for="cidade">Cidade</label><br>
+                <input type="text" name="cidade" id="cidade"><br>
+                <label for="estado">Estado</label><br>
+                <input type="text" name="estado" id="estado"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Dados da mensagem</legend>
+                <label class="required" for="assunto">Assunto</label><br>
+                <select name="assunto" id="assunto" required>
+                    <option value="" selected disabled>Selecione uma opção</option>
+                    <option value="reclamação">Reclamação</option>
+                    <option value="sugestão">Sugestão</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="outro">Outro</option>
+                </select><br>
+                <label for="mensagem">Mensagem</label><br>
+                <textarea name="mensagem" id="mensagem" rows="10" cols="40" required></textarea>
+            </fieldset>
+            <input type="submit" name="enviar" id="enviar" value="enviar">
+            <input type="reset" name="limpar" id="limpar" value="limpar">
+        </form>
+
+    </main>
+    <footer id="rodape">
+        <p id="paragrafo">Desenvolvido por Matheus Godoy & Matheus Almeida <br>
+        Todos Os Direitos Reservados &copy;</p>
+        <h4>Mapa Do Site</h4>
+        <ul id="mapa">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="comentarios.html">Comentarios</a></li>
+            <li><a href="metadados.html">Metadados</a></li>
+            <li><a href="#">Listas</a>
+                <ul>
+                    <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+                    <li><a href="lista_nao_ordenada.html">Lista Nao Ordenada</a></li>
+                </ul>
+            </li>
+            <li><a href="layout.html">Layout</a></li>
+            <li><a href="contato.html">Fale Conosco</a></li>
+        </ul>
+    </footer>   
+</body>
+</html>
